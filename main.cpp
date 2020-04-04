@@ -48,30 +48,31 @@ int main()
     emoticons->add(":(","Frown");
     emoticons->add(":()","Monkey");
 
+    emoticons->display_forward();
     emoticons->display_backward();
-    languages->display_forward();
-
-
-
-    cpp.text = "2";
-    cpp.url = "https://www.2.com/";
-    languages->set_at(2, cpp);
-
-    cpp.text = "6";
-    cpp.url = "https://www.6.com/";
-    languages->set_at(6, cpp);
-
-    string test = languages->get(1).text;
-    cout << "TEST: "  << test << endl;
-
-    test = languages->get(2).text;
-    cout << "TEST 2: "  << test << endl;
-
-    test = languages->get(6).text;
-    cout << "TEST 6: "  << test << endl;
 
     languages->display_forward();
     languages->display_backward();
+
+    // cpp.text = "2";
+    // cpp.url = "https://www.2.com/";
+    // languages->set_at(2, cpp);
+    //
+    // cpp.text = "6";
+    // cpp.url = "https://www.6.com/";
+    // languages->set_at(6, cpp);
+    //
+    // string test = languages->get(1).text;
+    // cout << "TEST: "  << test << endl;
+    //
+    // test = languages->get(2).text;
+    // cout << "TEST 2: "  << test << endl;
+    //
+    // test = languages->get(6).text;
+    // cout << "TEST 6: "  << test << endl;
+    //
+    // languages->display_forward();
+    // languages->display_backward();
 
 
     return 0;
